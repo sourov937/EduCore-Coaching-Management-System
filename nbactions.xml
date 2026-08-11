@@ -1,0 +1,45 @@
+
+<actions>
+    <action>
+        <actionName>run</actionName>
+        <packagings>
+            <packaging>jar</packaging>
+        </packagings>
+        <goals>
+            <goal>process-classes</goal>
+            <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:java</goal>
+        </goals>
+        <properties>
+            <exec.mainClass>com.educore.Main</exec.mainClass>
+        </properties>
+    </action>
+    <action>
+        <actionName>debug</actionName>
+        <packagings>
+            <packaging>jar</packaging>
+        </packagings>
+        <goals>
+            <goal>process-classes</goal>
+            <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:java</goal>
+        </goals>
+        <properties>
+            <exec.mainClass>com.educore.Main</exec.mainClass>
+            <exec.vmArgs>-agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address}</exec.vmArgs>
+            <exec.executable>java</exec.executable>
+            <jpda.listen>true</jpda.listen>
+        </properties>
+    </action>
+    <action>
+        <actionName>profile</actionName>
+        <packagings>
+            <packaging>jar</packaging>
+        </packagings>
+        <goals>
+            <goal>process-classes</goal>
+            <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:java</goal>
+        </goals>
+        <properties>
+            <exec.mainClass>com.educore.Main</exec.mainClass>
+        </properties>
+    </action>
+</actions>
