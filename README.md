@@ -344,7 +344,7 @@ Computer Science & Engineering (CSE)
 **Institution:** Bangladesh University of Business and Technology (BUBT)
 **Semester:** Summer 2026
 
-[---](https://github.com/sourov937/EduCore-Coaching-Management-System/blob/master/screenshots/Dashboards.jpeg)
+
 
 ## 📚 References
 
